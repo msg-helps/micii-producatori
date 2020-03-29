@@ -1,0 +1,44 @@
+%svg-common {
+	background: url("/assets/icons/sprites/svg/sprite.css-113b459b.svg") no-repeat;
+}
+
+.svg-home {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-home-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-info {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-info-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-producers {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-producers-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-products {
+	@extend %svg-common;
+	background-position: 100% 100%;
+}
+
+.svg-products-dims {
+	width: 44px;
+	height: 44px;
+}
+

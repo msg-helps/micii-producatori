@@ -1,0 +1,19 @@
+{
+  "dest": "src/assets/icons",
+  "shape": {
+    "spacing": {
+      "padding": 2,
+      "box": "content"
+    }
+  },
+  "mode": {
+    "css": {
+      "dest": "sprites",
+      "render": {
+        "scss": {
+          "dest": "./_sprite.scss"
+        }
+      }
+    }
+  }
+}
