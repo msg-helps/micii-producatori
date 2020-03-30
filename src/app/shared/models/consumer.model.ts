@@ -11,13 +11,13 @@ export interface Consumer {
   /**
    * @member {string} [firstName]
    */
-  firstName: string;
+  firstName?: string;
   /**
    * @member {string} [lastName]
    */
-  lastName: string;
+  lastName?: string;
   /**
    * @member {string} [phone]
    */
-  phone: string;
+  phone?: string;
 }

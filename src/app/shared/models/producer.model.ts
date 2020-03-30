@@ -11,17 +11,17 @@ export interface Producer {
   /**
    * @member {string} [firstName]
    */
-  firstName: string;
+  firstName?: string;
   /**
    * @member {string} [lastName]
    */
-  lastName: string;
+  lastName?: string;
   /**
    * @member {string} [phone]
    */
-  phone: string;
+  phone?: string;
   /**
    * @member {string} [email]
    */
-  email: string;
+  email?: string;
 }

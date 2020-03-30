@@ -1,19 +1,39 @@
+@import "~bootstrap/scss/bootstrap-grid";
+
 .nav-menu {
+  @include media-breakpoint-down(md) {
+    top: auto;
+    bottom: -1px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    flex-direction: row;
+  }
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 150px;
   border: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
 
   &__button {
     cursor: pointer;
     background: white;
     height: 100%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  &--icon-size {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,8 @@
+
+<div class="row">
+  <app-product-tile
+    class="col-lg-3 col-md-6"
+    *ngFor="let product of products$ | async"
+    [product]="product"
+  ></app-product-tile>
+</div>
