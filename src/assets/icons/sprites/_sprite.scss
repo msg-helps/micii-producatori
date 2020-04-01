@@ -1,84 +1,83 @@
 %svg-common {
-	background: url("/assets/icons/sprites/svg/sprite.css-33148edc.svg") no-repeat;
+  background: url('/assets/icons/sprites/svg/sprite.css-33148edc.svg') no-repeat;
 }
 
 .svg-home {
-	@extend %svg-common;
-	background-position: 0 0;
+  @extend %svg-common;
+  background-position: 0 0;
 }
 
 .svg-home-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-home_active {
-	@extend %svg-common;
-	background-position: 50% 0;
+  @extend %svg-common;
+  background-position: 50% 0;
 }
 
 .svg-home_active-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-info {
-	@extend %svg-common;
-	background-position: 0 50%;
+  @extend %svg-common;
+  background-position: 0 50%;
 }
 
 .svg-info-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-info_active {
-	@extend %svg-common;
-	background-position: 50% 50%;
+  @extend %svg-common;
+  background-position: 50% 50%;
 }
 
 .svg-info_active-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-producers {
-	@extend %svg-common;
-	background-position: 100% 0;
+  @extend %svg-common;
+  background-position: 100% 0;
 }
 
 .svg-producers-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-producers_active {
-	@extend %svg-common;
-	background-position: 100% 50%;
+  @extend %svg-common;
+  background-position: 100% 50%;
 }
 
 .svg-producers_active-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-products {
-	@extend %svg-common;
-	background-position: 0 100%;
+  @extend %svg-common;
+  background-position: 0 100%;
 }
 
 .svg-products-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .svg-products_active {
-	@extend %svg-common;
-	background-position: 50% 100%;
+  @extend %svg-common;
+  background-position: 50% 100%;
 }
 
 .svg-products_active-dims {
-	width: 44px;
-	height: 44px;
+  width: 44px;
+  height: 44px;
 }
-

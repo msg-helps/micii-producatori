@@ -1,4 +1,4 @@
-import {Producer} from "./producer.model";
+import { Producer } from './producer.model'
 
 /**
  *
@@ -8,33 +8,37 @@ export interface Product {
   /**
    * @member {string} [id]
    */
-  id: string;
+  id: string
   /**
    * @member {Producer} [producer]
    */
-  producer?: Producer;
+  producer?: Producer
   /**
    * @member {string} [name]
    */
-  name?: string;
+  name?: string
   /**
    * @member {string} [description]
    */
-  description?: string;
+  description?: string
   /**
    * @member {string} [pictureUrl]
    */
-  pictureUrl?: string;
+  pictureUrl?: string
   /**
    * @member {boolean} [available]
    */
-  available?: boolean;
+  available?: boolean
   /**
    * @member {number} [price]
    */
-  price?: number;
+  price?: number
+  /**
+   * @member {string} [unit]
+   */
+  unit?: string
   /**
    * @member {string} [category]
    */
-  category?: string;
+  category?: string
 }
