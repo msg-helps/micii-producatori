@@ -1,4 +1,3 @@
-
 /**
  *
  * An interface representing Consumer model.
@@ -7,17 +6,17 @@ export interface Consumer {
   /**
    * @member {string} [id]
    */
-  id: string;
+  id: string
   /**
    * @member {string} [firstName]
    */
-  firstName?: string;
+  firstName?: string
   /**
    * @member {string} [lastName]
    */
-  lastName?: string;
+  lastName?: string
   /**
    * @member {string} [phone]
    */
-  phone?: string;
+  phone?: string
 }

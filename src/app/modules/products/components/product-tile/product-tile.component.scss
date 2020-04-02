@@ -1,0 +1,14 @@
+.product-tile {
+  margin-bottom: 40px;
+  cursor: pointer;
+
+  &--unavailable {
+    cursor: initial;
+    pointer-events: none;
+    background-color: #e4e4e4;
+    color: #9a9a9a;
+    img {
+      opacity: 50%;
+    }
+  }
+}

@@ -1,79 +1,89 @@
 {
-    "products": [
-        { 
-          "id": "1", 
-          "name": "Cartofi rosii", 
-          "description": "cei mai buni cartofi pt cuptor",
-          "pictureUrl": "http://alminadistributie.ro/wp-content/uploads/2015/07/cartofi-rosii.jpg",
-          "available": true,
-          "price": 5,
-          "category": "legume",
-          "producer": {
-              "id": "1",
-              "firstName": "Costel",
-              "lastName": "Nenea",
-              "phone": "123456789"
-          }
-        },
-        { 
-            "id": "2", 
-            "name": "Mere", 
-            "description": "cele mai bune mere de pe zona",
-            "pictureUrl": "https://goveggie.ro/wp-content/uploads/2017/09/ME0061_01-mere-florina-romania.jpg",
-            "available": true,
-            "price": 8,
-            "category": "fructe",
-            "producer": {
-                "id": "2",
-                "firstName": "Gheorghe",
-                "lastName": "Badea",
-                "phone": "123456789"
-            }
-          },
-          { 
-            "id": "3", 
-            "name": "Rosii de Casa", 
-            "description": "stiu ca iti este pofta",
-            "pictureUrl": "https://storage0.dms.mpinteractiv.ro/media/401/721/27230/11126377/4/rosii.jpg",
-            "available": true,
-            "price": 10,
-            "category": "legume",
-            "producer": {
-                "id": "1",
-                "firstName": "Costel",
-                "lastName": "Nenea",
-                "phone": "123456789"
-            }
-          },
-          { 
-            "id": "4", 
-            "name": "Rosii", 
-            "description": "rosii proaspete din gradina personala",
-            "pictureUrl": "https://agrointel.ro/wp-content/uploads/2017/03/cultura-de-rosii-gustoase.jpg",
-            "available": true,
-            "price": 12,
-            "category": "legume",
-            "producer": {
-                "id": "2",
-                "firstName": "Gheorghe",
-                "lastName": "Badea",
-                "phone": "123456789"
-            }
-          },
-          { 
-            "id": "5", 
-            "name": "Carnaciori", 
-            "description": "Carnaciori afumati de casa",
-            "pictureUrl": "https://savoriurbane.com/wp-content/uploads/2019/12/carnati-cabanos-de-casa-pusi-la-aeristit-dupa-afumare-alaturi-de-carnaciori-de-bere.jpg",
-            "available": true,
-            "price": 12,
-            "category": "carne",
-            "producer": {
-                "id": "3",
-                "firstName": "Ion",
-                "lastName": "Ghita",
-                "phone": "987654321"
-            }
-          }
-    ]
-  }
+  "products": [
+    {
+      "id": "1",
+      "name": "Cartofi rosii",
+      "description": "cei mai buni cartofi pt cuptor",
+      "pictureUrl": "http://alminadistributie.ro/wp-content/uploads/2015/07/cartofi-rosii.jpg",
+      "available": true,
+      "price": 5,
+      "unit": "kg",
+      "category": "legume",
+      "producer": {
+        "id": "1",
+        "firstName": "Costel",
+        "lastName": "Nenea",
+        "phone": "123456789",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/User_with_smile.svg/1200px-User_with_smile.svg.png"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Mere",
+      "description": "cele mai bune mere de pe zona",
+      "pictureUrl": "https://goveggie.ro/wp-content/uploads/2017/09/ME0061_01-mere-florina-romania.jpg",
+      "available": true,
+      "price": 8,
+      "unit": "kg",
+      "category": "fructe",
+      "producer": {
+        "id": "2",
+        "firstName": "Gheorghe",
+        "lastName": "Badea",
+        "phone": "123456789",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/User_with_smile.svg/1200px-User_with_smile.svg.png"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Rosii de Casa",
+      "description": "stiu ca iti este pofta",
+      "pictureUrl": "https://storage0.dms.mpinteractiv.ro/media/401/721/27230/11126377/4/rosii.jpg",
+      "available": false,
+      "price": 10,
+      "unit": "kg",
+      "category": "legume",
+      "producer": {
+        "id": "1",
+        "firstName": "Costel",
+        "lastName": "Nenea",
+        "phone": "123456789",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/User_with_smile.svg/1200px-User_with_smile.svg.png"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Rosii",
+      "description": "rosii proaspete din gradina personala",
+      "pictureUrl": "https://agrointel.ro/wp-content/uploads/2017/03/cultura-de-rosii-gustoase.jpg",
+      "available": true,
+      "price": 12,
+      "unit": "kg",
+      "category": "legume",
+      "producer": {
+        "id": "2",
+        "firstName": "Gheorghe",
+        "lastName": "Badea",
+        "phone": "123456789",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/User_with_smile.svg/1200px-User_with_smile.svg.png"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Carnaciori",
+      "description": "Carnaciori afumati de casa",
+      "pictureUrl": "https://savoriurbane.com/wp-content/uploads/2019/12/carnati-cabanos-de-casa-pusi-la-aeristit-dupa-afumare-alaturi-de-carnaciori-de-bere.jpg",
+      "available": true,
+      "price": 12,
+      "unit": "bucata",
+      "category": "carne",
+      "producer": {
+        "id": "3",
+        "firstName": "Ion",
+        "lastName": "Ghita",
+        "phone": "987654321",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/User_with_smile.svg/1200px-User_with_smile.svg.png"
+      }
+    }
+  ]
+}
