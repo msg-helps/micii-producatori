@@ -1,6 +1,13 @@
+os: linux
+dist: xenial
 language: node_js
 node_js:
   - 12
+script:
+  - npm run build
+branches:
+  only:
+    - travis
 deploy:
   on:
     branch: master
@@ -9,6 +16,6 @@ deploy:
   secret_access_key:
     secure: oz+E/RMATKVzX39HjPOlXAy2XzhKsqTAGfq9UmOD4cg9bVg5pBS3w1ddHwpJr8uY+wpR68JJns+Czh7Hd+z6lEkjF5juAcEgULudUvD6siOaV/8XMbZZPeTwysGJFBrYsd8KuVxCWwwj30eR6SyTWypblSQxCURl3Gut93YdPbKbmcM8c/Fc8rD+DxxiVm5XqQcmrnrnCzxmckcT/xi4wGR3/aZU+7LTHozLEUSIoFKtcf9z8yvQ8tduvfp9dg8AXcS65IEAHSx4CsvBGbzA+T9SirOX7vUuqF6IbzMFlqKUpHS2iI0YC3Ll8J5gskTxWQgEhbIrKTJ1ONpVxwVvO0Ju6e17hnnXCHAbhBTcJ2NcC2FduQ8DtBknzKaO24rNKzy+73RmzrkWyV/VFOqWMduLEKYqEqjArTZ6L9Kcmx2Iuvt5OU2xnOjlBVpOJjqOp95Vd6L9vQLgeG5UfA2xeeJNF7DVobZ3kU+srw9sQFrdHzIv8PrqtnowKW0AUC4dOZ20jxpo+/AyiyDCcbomzRgWPglKMM8qcexUCs+KvakVhm5Q+6vrpSw6YMkxzhoS/4Qs6l8mIYJmJsTBgs1Xr6ZDsYH4fr/rctlJOAmw9n2iDhhrG93bfnv70I8LDazzGwXfWhT5JCv/hrSI+i8cqGVShXoHaa07U4zF6wuaI14=
   bucket: sal-website
-  skip_cleanup: true
+  cleanup: false
   local_dir: dist
   region: eu-west-1
