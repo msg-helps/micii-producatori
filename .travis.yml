@@ -11,6 +11,7 @@ branches:
 deploy:
   on:
     branch: master
+  edge: true
   provider: s3
   access_key_id: AKIAQMOAINUJZZNTY2F7
   secret_access_key:
