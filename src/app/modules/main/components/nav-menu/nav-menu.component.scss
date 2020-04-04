@@ -37,3 +37,19 @@
     }
   }
 }
+
+a:link,
+a:visited {
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $primary;
+}
+
+.active {
+  color: $primary !important;
+}

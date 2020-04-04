@@ -1,18 +1,14 @@
-<div class="nav-menu">
-  <div class="nav-menu__button">
-    <span class="nav-menu--icon-size svg-home svg-home-dims"></span>
-    Home
-  </div>
-  <div class="nav-menu__button">
-    <span class="nav-menu--icon-size svg-producers svg-producers-dims"></span>
-    Producers
-  </div>
-  <div class="nav-menu__button" (click)="goToPage('/products')">
-    <span class="nav-menu--icon-size svg-products svg-products-dims"></span>
-    Products
-  </div>
-  <div class="nav-menu__button">
-    <span class="nav-menu--icon-size svg-info svg-info-dims"></span>
-    <a>Info</a>
-  </div>
-</div>
+<nav class="nav-menu">
+  <a
+    *ngFor="let item of items"
+    class="nav-menu__button"
+    routerLink="/{{ item.route }}"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    <span
+      class="nav-menu--icon-size svg-{{ item.icon }} svg-{{ item.icon }}-dims"
+    ></span>
+    {{ item.name }}
+  </a>
+</nav>

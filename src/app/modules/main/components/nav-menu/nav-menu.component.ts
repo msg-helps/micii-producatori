@@ -7,11 +7,34 @@ import { Router } from '@angular/router'
   styleUrls: ['./nav-menu.component.scss'],
 })
 export class NavMenuComponent implements OnInit {
+  items = [
+    {
+      name: 'Acasa',
+      icon: 'home',
+      route: '/',
+    },
+    {
+      name: 'Producatori',
+      icon: 'producers',
+      route: 'producers',
+    },
+    {
+      name: 'Produse',
+      icon: 'products',
+      route: 'products',
+    },
+    {
+      name: 'Info',
+      icon: 'info',
+      route: 'info',
+    },
+  ]
+
   constructor(protected router: Router) {}
 
   ngOnInit() {}
 
-  goToPage(pageLink: string) {
-    this.router.navigate([pageLink])
+  goToPage(route: string) {
+    this.router.navigate([route])
   }
 }
