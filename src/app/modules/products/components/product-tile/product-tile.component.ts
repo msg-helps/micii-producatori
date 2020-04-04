@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core'
-import { Product } from '../../../../shared/models/product.model'
+import { Component, Input, OnInit } from '@angular/core';
+import { Product } from '../../../../shared/models/product.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-tile',
@@ -8,20 +9,20 @@ import { Product } from '../../../../shared/models/product.model'
 })
 export class ProductTileComponent implements OnInit {
   @Input()
-  product: Product
+  product: Product;
 
-  constructor() {}
+  constructor(protected router: Router) {}
 
   ngOnInit() {}
 
   onProductClick() {
-    // nav to product detail page
+    this.router.navigate([]);
   }
 
   styleProducerAvatar(): Object {
     return {
       'background-image': 'url(' + this.product.producer.pictureUrl + ')',
       'background-size': 'cover',
-    }
+    };
   }
 }

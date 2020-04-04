@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core'
-import { Router } from '@angular/router'
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-menu',
@@ -12,6 +12,6 @@ export class NavMenuComponent implements OnInit {
   ngOnInit() {}
 
   goToPage(pageLink: string) {
-    this.router.navigate([pageLink])
+    this.router.navigate([pageLink]);
   }
 }
