@@ -1,0 +1,15 @@
+a:link,
+a:visited {
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: blue;
+}
+
+.active {
+  color: blue !important;
+}
