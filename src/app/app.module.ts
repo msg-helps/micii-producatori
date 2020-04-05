@@ -11,6 +11,7 @@ import { ProductsModule } from './modules/products/products.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './modules/auth/auth.module';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { EventEmitterService } from './modules/event-emitter/event-emitter.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +27,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AuthModule,
     ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [EventEmitterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

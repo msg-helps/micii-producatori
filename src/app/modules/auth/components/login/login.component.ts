@@ -1,5 +1,6 @@
-import { Component, TemplateRef, OnInit } from '@angular/core';
+import { Component, TemplateRef, OnInit, ViewChild } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { EventEmitterService } from '../../../event-emitter/event-emitter.service';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +9,21 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class LoginComponent implements OnInit {
   modalRef: BsModalRef;
+  @ViewChild('template', {static: false}) templateRef: TemplateRef<any>;
+
+  constructor(private modalService: BsModalService, private eventEmitterService: EventEmitterService ) {}
 
   ngOnInit() {
+    if (this.eventEmitterService.subsVar === undefined) {
+      this.eventEmitterService.subsVar = this.eventEmitterService.
+      invokeLoginComponentFunction.subscribe((name: string) => {
+        this.openModal();
+      });
+    }
   }
 
-  constructor(private modalService: BsModalService) {}
-
-  openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
+  openModal( ) {
+    this.modalRef = this.modalService.show(this.templateRef);
   }
 
 }
