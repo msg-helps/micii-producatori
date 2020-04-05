@@ -4,7 +4,8 @@ import { ManagementRoutingModule } from './management-routing.module'
 import { ManagementComponent } from './pages/management-page/management.component'
 import { ManagementProductsComponent } from './components/products/products.component'
 import { OrdersComponent } from './components/orders/orders.component'
-import { MatDividerModule, MatTabsModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
 import { DetailsComponent } from './components/details/details.component'
 
 @NgModule({
