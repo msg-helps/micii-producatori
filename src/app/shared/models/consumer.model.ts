@@ -19,4 +19,16 @@ export interface Consumer {
    * @member {string} [phone]
    */
   phone?: string
+  /**
+   * @member {string} [email]
+   */
+  email?: string
+  /**
+   * @member {string} [pictureUrl]
+   */
+  pictureUrl?: string
+  /**
+   * @member {string} [address]
+   */
+  address?: string
 }
