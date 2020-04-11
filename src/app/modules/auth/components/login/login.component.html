@@ -8,20 +8,20 @@
   <div class="modal-body">
     <div class="row">
       <div class="col-md-10 offset-md-1 mt-2">
-        <form>
+        <form (submit)="signIn($event)">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email/Numar de telefon</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="email">Email/Numar de telefon</label>
+            <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Parola</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="password">Parola</label>
+            <input type="password" class="form-control" id="password">
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Ține-mă logat</label>
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Ține-mă logat</label>
           </div>
-          <button type="submit" class="btn btn-primary">Continua</button>
+          <button mat-flat-button type="submit" color="primary">Continua</button>
           <a id="link-1" href="/reset-password">ai uitat parola?</a>
         </form>
         <hr>

@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { EventEmitterService } from '../../../event-emitter/event-emitter.service';
+import {AuthService} from '../../../auth/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,12 +8,21 @@ import { EventEmitterService } from '../../../event-emitter/event-emitter.servic
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  ngOnInit() {
-  }
 
-  constructor(private eventEmitterService: EventEmitterService) {}
+  constructor(private eventEmitterService: EventEmitterService,  private AuthServ: AuthService) {}
+
+  ngOnInit() {
+    this.AuthServ.customObservable.subscribe(( ) => {
+        this.signedIn();
+      }
+    );
+  }
 
   loginComponentOpenModal( ) {
     this.eventEmitterService.onLoginButtonClick();
+  }
+
+  signedIn(){
+    document.getElementById('cont').innerHTML = 'Profil';
   }
 }

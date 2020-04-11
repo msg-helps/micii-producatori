@@ -1,0 +1,15 @@
+{
+    "env": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-miciiprod-env-141242-authRole",
+            "UnauthRoleArn": "arn:aws:iam::026709880083:role/amplify-miciiprod-env-141242-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::026709880083:role/amplify-miciiprod-env-141242-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-miciiprod-env-141242-deployment",
+            "UnauthRoleName": "amplify-miciiprod-env-141242-unauthRole",
+            "StackName": "amplify-miciiprod-env-141242",
+            "StackId": "arn:aws:cloudformation:eu-west-1:026709880083:stack/amplify-miciiprod-env-141242/6b1ea880-7be5-11ea-b736-0acb91e9e692",
+            "AmplifyAppId": "d3brb6rxo8eam0"
+        }
+    }
+}
