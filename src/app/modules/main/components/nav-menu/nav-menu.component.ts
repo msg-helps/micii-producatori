@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core'
-import { Router } from '@angular/router'
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-menu',
@@ -11,7 +11,7 @@ export class NavMenuComponent implements OnInit {
     {
       name: 'Acasa',
       icon: 'home',
-      route: '/',
+      route: 'login',
     },
     {
       name: 'Producatori',
@@ -28,13 +28,13 @@ export class NavMenuComponent implements OnInit {
       icon: 'info',
       route: 'info',
     },
-  ]
+  ];
 
   constructor(protected router: Router) {}
 
   ngOnInit() {}
 
   goToPage(route: string) {
-    this.router.navigate([route])
+    this.router.navigate([route]);
   }
 }

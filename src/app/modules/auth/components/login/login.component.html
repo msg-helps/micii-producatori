@@ -1,0 +1,39 @@
+<ng-template #template id="template">
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Contul meu</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 mt-2">
+        <form (submit)="signIn($event)">
+          <div class="form-group">
+            <label for="email">Email/Numar de telefon</label>
+            <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="password">Parola</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Ține-mă logat</label>
+          </div>
+          <button mat-flat-button type="submit" color="primary">Continua</button>
+          <a id="link-1" href="/reset-password">ai uitat parola?</a>
+        </form>
+        <hr>
+        <div class="col">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Intra cu Facebook
+          </a>
+          <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i> Intra cu Google+
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
