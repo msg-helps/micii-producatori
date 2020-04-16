@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core'
-import { ProductsService } from '../../products.service'
-import { Observable } from 'rxjs'
-import { Product } from '../../../../shared/models/product.model'
+import {select, Store} from "@ngrx/store";
+import {selectProductsState} from "../../store/product.reducers";
+import {StateWithProducts} from "../../store/product.state";
+import {GetProducts} from "../../store/product.action";
 
 @Component({
   selector: 'app-products-page',
@@ -9,11 +10,13 @@ import { Product } from '../../../../shared/models/product.model'
   styleUrls: ['./products-page.component.scss'],
 })
 export class ProductsPageComponent implements OnInit {
-  products$: Observable<Product[]>
+  products$ = this.store
+    .select(selectProductsState)
+    .pipe(select((state) => state.products))
 
-  constructor(protected productsService: ProductsService) {}
+  constructor(private store: Store<StateWithProducts>) {}
 
   ngOnInit() {
-    this.products$ = this.productsService.getAllProducts()
+    this.store.dispatch(new GetProducts())
   }
 }

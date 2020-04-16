@@ -1,0 +1,15 @@
+<mat-card class="pt-2 pb-2">
+  <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center w-100">
+      <p class="d-none d-sm-block mb-0 mr-2">Sorteaza:</p>
+      <mat-select [(value)]="orders[0].value">
+        <mat-option *ngFor="let order of orders" [value]="order.value">
+          {{ order.viewValue }}
+        </mat-option>
+      </mat-select>
+    </div>
+    <div>
+      <button mat-raised-button (click)="onFilterClick()">Filtrare</button>
+    </div>
+  </div>
+</mat-card>
