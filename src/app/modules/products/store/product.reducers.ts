@@ -5,10 +5,10 @@ import {
 } from './product.state'
 import { ProductActions, ProductActionsTypes } from './product.action'
 
-export const productReducers = (
+export function productReducers(
   state = initialProductState,
   action: ProductActions,
-): ProductState => {
+): ProductState {
   switch (action.type) {
     case ProductActionsTypes.GetProducts: {
       return {
