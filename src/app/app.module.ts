@@ -8,10 +8,13 @@ import { RegisterModule } from './modules/register/register.module';
 import { UserModule } from './modules/user/user.module';
 import { MainModule } from './modules/main/main.module';
 import { ProductsModule } from './modules/products/products.module';
-import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './modules/auth/auth.module';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { EventEmitterService } from './modules/event-emitter/event-emitter.service';
+import {EffectsModule} from "@ngrx/effects";
+import {appReducers} from "./modules/state/app.state";
+import {StoreModule} from "@ngrx/store";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,12 +23,14 @@ import { EventEmitterService } from './modules/event-emitter/event-emitter.servi
     AppRoutingModule,
     BrowserAnimationsModule,
     RegisterModule,
-    HttpClientModule,
     UserModule,
     MainModule,
     ProductsModule,
     AuthModule,
-    ModalModule.forRoot()
+    SharedModule,
+    ModalModule.forRoot(),
+    StoreModule.forRoot(appReducers),
+    EffectsModule.forRoot([]),
   ],
   providers: [EventEmitterService],
   bootstrap: [AppComponent],
