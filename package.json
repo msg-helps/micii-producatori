@@ -35,7 +35,7 @@
     "cli": "^1.0.1",
     "ngx-bootstrap": "^5.5.0",
     "rxjs": "~6.4.0",
-    "svg-sprite": "^1.5.0",
+    "svg-sprite": "^1.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
